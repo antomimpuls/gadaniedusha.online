@@ -11,10 +11,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 <script>
 const SITE_SETTINGS = {
-  'phoneNumber': '+79034551278',
-  'psychicName': 'Ася',
+  'phoneNumber': '+79933010375',
+  'psychicName': 'Ангелина Николаевна',
   'telegramEnabled': 1,
-  'telegramNickname': 'mag_taro8',
+  'telegramNickname': 'Angelinagadanie',
   'city': 'Москва',
   'address': 'г. Москва, ул. Тверская, д. 12, офис 45',
   'enableRedirect': false,
@@ -26,12 +26,11 @@ const SITE_SETTINGS = {
   'psychicImageURL': 'https://raw.githubusercontent.com/antomimpuls/gadaniedusha.online/main/Screenshot_4.jpg',
   'workingHours': 'ежедневно',
   'responseTime': '10-20 минут',
-  'metrikaMessengerVisible': false
-,
-  "maxEnabled": false,
-  "maxUrl": ""
+  'metrikaMessengerVisible': false,
+  'maxEnabled': false,
+  'maxUrl': ""
 };
-const PSYCHIC_NAME=SITE_SETTINGS.psychicName||'Ася';
+const PSYCHIC_NAME=SITE_SETTINGS.psychicName||'Ангелина Николаевна';
 const PHONE_DIGITS=(SITE_SETTINGS.phoneNumber||'').replace(/\D/g,'');
 const WHATSAPP_MESSAGE=PSYCHIC_NAME ? `Здравствуйте, ${PSYCHIC_NAME}! Хочу обратиться к вам за помощью.` : 'Здравствуйте, хочу обратиться к вам за помощью.';
 const TELEGRAM_MESSAGE=WHATSAPP_MESSAGE;
@@ -1200,7 +1199,7 @@ function replaceNamePlaceholders(name){
 }
 
 function setImagesAndTexts(){
-    const psychicName = SETTINGS.psychicName || 'Ася';
+    const psychicName = SETTINGS.psychicName || 'Ангелина Николаевна';
     replaceNamePlaceholders(psychicName);
     const heroName = document.getElementById('heroName');
     if (heroName) {
